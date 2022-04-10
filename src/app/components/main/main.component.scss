@@ -1,0 +1,102 @@
+.containter{
+    padding: 1% !important;
+    margin: 1% !important;
+}
+
+h2{
+    font-weight: 700 !important;
+    color:#96A2B4;
+    margin:0px !important;
+}
+
+h2, h3{
+    color:#96A2B4 !important
+}
+
+mat-card {
+    border-radius: 5%;
+    color:#96A2B4 !important;
+    background: #1a202e;
+    border: none;
+    box-shadow: 0 0.46875rem 2.1875rem rgb(90 97 105 / 10%), 0 0.9375rem 1.40625rem rgb(90 97 105 / 10%), 0 0.25rem 0.53125rem rgb(90 97 105 / 12%), 0 0.125rem 0.1875rem rgb(90 97 105 / 10%);
+}
+
+.box-img{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 22px;
+    margin: 25px;
+    box-shadow: 5px 3px 10px 0 rgb(21 15 15 / 30%);
+    border-radius: 10px;
+    text-align: -webkit-center;
+}
+
+
+.box-img i {
+    font-size: 22px;
+    color: #fff;
+}
+
+.box-statistics{
+    margin-top: 10%;
+    float:right
+}
+
+.box-statistics h4{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: end;
+}
+
+mat-icon{
+    font-size: 22px;
+    color: #fff;
+}
+
+.box-statistics div{
+    font-size: 26px;
+    font-weight: 700;
+    text-align: end;
+    margin-top: 5%;
+}
+
+.box-statistics h5{
+    text-align: end;
+    font-size: 26px;
+    margin-top: 1%;
+    font-weight: 700;
+}
+
+.box-indicators{
+    margin-top: 68%;
+}
+
+::ng-deep mat-progress-bar{
+  height: 10px !important;
+  background-color: red !important;
+}
+
+table{
+    width: 100% !important;
+}
+
+table{
+    color:#96A2B4 !important;
+}
+
+tr {
+    height: 50px !important;
+    vertical-align: middle;
+}
+
+thead {
+    color:#abaaaa;
+    font-weight: 500;
+    background-color: #15181D;
+}
+
+tbody tr:hover{
+    background-color: #252b38;
+    cursor: pointer;
+}

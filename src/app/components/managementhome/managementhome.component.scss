@@ -1,0 +1,40 @@
+* {
+    width: 100% !important;
+    height: 100% !important;
+    max-height: 100% !important;
+    max-width:  100% !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+#header{
+    background-color: #1A202E;
+    height: 9% !important;
+}
+
+#leftSideBar{
+    width: 19% !important;
+    max-height: 91% !important;
+    background-color: #1A202E;
+    position:relative;
+    overflow: auto;
+    box-shadow: 0 8px 10px 0 rgb(183 192 206 / 20%);
+}
+
+#leftSideBar::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar space */
+}
+ 
+
+#rightSideBar{
+    width: 81% !important;
+}
+
+
+#router{
+    background-color: #232B3E;
+    width: 81% !important;
+    max-height: 91% !important;
+    position: relative;
+    overflow: auto;
+}

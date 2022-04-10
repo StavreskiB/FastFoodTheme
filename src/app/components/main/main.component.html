@@ -1,0 +1,186 @@
+<div class="containter">
+    <div class="row">
+        <div class="col-5">
+            <h2>Hi, Welcome Back!</h2>
+            <h3>RestaurantName Dashboard!</h3>
+        </div>
+        <div class="col-4"></div>
+        <div class="col-3" style="text-align-last: end;">
+            <h3>{{ time | date: 'dd-MMM-yyyy hh:mm:ss a' }}</h3>
+        </div>
+    </div>
+    <div class="row mt-2 justify-content-center">
+        <div class="col-3">
+            <mat-card class="h-100">
+                <div class="box-img" style="background-color: #6F42C1 !important;">
+                    <mat-icon> fastfood</mat-icon>
+                </div>
+                <div class="box-statistics w-100">
+                    <h4 class="m-0">Kitchen orders</h4>
+                    <div>4,234</div>
+                </div>
+                <div class="box-indicators">
+                    <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+                </div>
+            </mat-card>
+        </div>
+        <div class="col-3">
+            <mat-card class="h-100">
+                <div class="box-img" style="background-color: #fd7e14 !important;">
+                    <mat-icon> local_bar</mat-icon>
+                </div>
+                <div class="box-statistics w-100">
+                    <h4 class="m-0">Bar orders</h4>
+                    <div>4,234</div>
+                </div>
+                <div class="box-indicators">
+                    <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+                </div>
+            </mat-card>
+        </div>
+        <div class="col-3">
+            <mat-card class="h-100">
+                <div class="box-img" style="background-color: #198754 !important;">
+                    <mat-icon> local_shipping</mat-icon>
+                </div>
+                <div class="box-statistics w-100">
+                    <h4 class="m-0">Shipping orders</h4>
+                    <div>4,234</div>
+                </div>
+                <div class="box-indicators">
+                    <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+                </div>
+            </mat-card>        
+        </div>
+        <div class="col-3">
+            <mat-card class="h-100">
+                <div class="box-img" style="background-color: #0DCAF0 !important;">
+                    <mat-icon> attach_money</mat-icon>
+                </div>
+                <div class="box-statistics w-100">
+                    <h4 class="m-0">Total</h4>
+                    <div>4,234</div>
+                </div>
+                <div class="box-indicators">
+                    <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+                </div>
+            </mat-card>        
+        </div>
+    </div>
+
+    <div class="row justify-content-center mt-5">
+        <div class="col-8">
+            <mat-card class="h-100">
+                <div id="chart">
+                    <apx-chart
+                      [series]="chartOptions.series"
+                      [chart]="chartOptions.chart" 
+                      [xaxis]="chartOptions.xaxis"
+                      [stroke]="chartOptions.stroke"
+                      [dataLabels]="chartOptions.dataLabels"
+                      [yaxis]="chartOptions.yaxis"
+                      [labels]="chartOptions.labels"
+                      [legend]="chartOptions.legend"
+                      [title]="chartOptions.title"
+                      [subtitle]="chartOptions.subtitle"
+                    ></apx-chart>
+                  </div>
+            </mat-card> 
+        </div>
+        <div class="col-4">
+            <mat-card class="h-100">
+                <div id="chart">
+                    <apx-chart
+                      [series]="chartOptions.series"
+                      [chart]="chartOptions.chart" 
+                      [xaxis]="chartOptions.xaxis"
+                      [stroke]="chartOptions.stroke"
+                      [dataLabels]="chartOptions.dataLabels"
+                      [yaxis]="chartOptions.yaxis"
+                      [labels]="chartOptions.labels"
+                      [legend]="chartOptions.legend"
+                      [title]="chartOptions.title"
+                      [subtitle]="chartOptions.subtitle"
+                    ></apx-chart>
+                  </div>
+            </mat-card> 
+        </div>
+    </div>
+    <div class="row justify-content-center mt-5">
+        <div class="col-12">
+           <mat-card class="h-100" style="text-align: -webkit-center; border-radius: 0% !important;"> 
+                <div style="text-align: left;"><h2>Currently Employee</h2></div>
+                <table class="table mt-4">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                    </tbody>
+                </table>
+           </mat-card> 
+        </div>
+    </div>
+</div>

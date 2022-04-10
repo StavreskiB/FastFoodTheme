@@ -1,0 +1,125 @@
+<div class="containter">
+    <div class="row">
+        <div class="col-6" style="align-self: center;">
+            <mat-form-field class="example-full-width w-100" appearance="fill">
+                <mat-label>Number</mat-label>
+                <input type="text"
+                        placeholder="Pick one" 
+                        aria-label="Number"
+                        matInput
+                        [formControl]="myControl"
+                        [matAutocomplete]="auto">
+                <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+                    <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                    {{option}}
+                    </mat-option>
+                </mat-autocomplete>
+            </mat-form-field>
+        </div>
+        <div class="col-3">
+            <mat-card class="h-100">
+                <div class="box-img" style="background-color: #fd7e14 !important;">
+                    <i class="bi bi-cart-check-fill"></i>
+                </div>
+                <div class="box-statistics w-100">
+                    <h4 class="m-0">Bar orders</h4>
+                    <div>4,234</div>
+                </div>
+                <div class="box-indicators">
+                    <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+                </div>
+            </mat-card>
+        </div>
+        <div class="col-3">
+            <mat-card class="h-100">
+                <div class="box-img" style="background-color: #0DCAF0 !important;">
+                    <mat-icon> attach_money</mat-icon>
+                </div>
+                <div class="box-statistics w-100">
+                    <h4 class="m-0">Total</h4>
+                    <div>4,234</div>
+                </div>
+                <div class="box-indicators">
+                    <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+                </div>
+            </mat-card>        
+        </div>
+        <div class="col-6 mt-3">
+            <mat-card class="h-100" style="text-align: -webkit-center;"> 
+                <div class="row justify-content-center p-3">
+                    <div class="col-12" style="text-align: left;">
+                        <h3>Product Info</h3>
+                    </div>
+                    <table class="table mt-1">
+                        <thead>
+                            <tr>
+                                <td>Name</td>
+                                <td style="text-align: right;">Pizza</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Price</td>
+                                <td style="text-align: right;">135</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Quantity</td>
+                                <td style="text-align: right;">45</td>
+                            </tr>
+                            <tr>
+                                <td>Availiblity</td>
+                                <td style="text-align: right;"><button style="border:1px solid #dc3545; color: #dc3545 !important" class="badge" mat-raised-button>Out Of Stock</button></td>
+                            </tr>
+                            <tr>
+                                <td>SKU Identification</td>
+                                <td style="text-align: right;">123</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="col-6 mt-4" style="text-align: left;"><button id="edit" mat-button>Edit</button></div>
+                    <div class="col-6 mt-4" style="text-align: right;"><button id="delete" mat-button>Delete</button></div> 
+                </div>
+            </mat-card>
+        </div>
+        <div class="col-6 mt-3">
+            <mat-card class="h-100" style="text-align: -webkit-center;"> 
+                <div class="row justify-content-center p-3">
+                    <div class="col-12" style="text-align: left;">
+                        <h3>Product Details</h3>
+                    </div>
+                    <table class="table mt-1">
+                        <thead>
+                            <tr>
+                                <td>Bread</td>
+                                <td style="text-align: right;">1</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Milk</td>
+                                <td style="text-align: right;">120gr</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Wather</td>
+                                <td style="text-align: right;">120gr</td>
+                            </tr>
+                            <tr>
+                                <td>Eggs</td>
+                                <td style="text-align: right;">4 pices</td>
+                            </tr>
+                            <tr>
+                                <td>Eggs</td>
+                                <td style="text-align: right;">4 pices</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="col-6 mt-4" style="text-align: left;"><button id="edit" mat-button>Edit</button></div>
+                    <div class="col-6 mt-4" style="text-align: right;"><button id="delete" mat-button>Delete</button></div> 
+    
+                </div>
+            </mat-card>
+        </div>
+    </div>
+</div>

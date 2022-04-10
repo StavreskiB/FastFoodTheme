@@ -1,0 +1,129 @@
+<!-- <div class="row justify-content-center text-white m-0 p-0" style="height: 9%;">
+    <div class="col-12 text-center" class="softwareLogo">
+        <img src="../../../assets/img/logo.png" style="margin-right:3%">
+        <h2>Name</h2>
+    </div>
+</div>  -->
+<div class="row justify-content-center text-white m-0 p-0">
+     <div class="col-12 text-center mt-4">
+        <img src="../../../assets/img/img.jpg" alt="thumbnail" class="thumbnail">
+        <div class="name mt-2">Name Surname</div>
+        <div class="position">Manager</div>
+    </div>
+</div>
+<div class="row justify-content-center text-white mt-3 m-0 p-0">
+    <div class="customCol text-center" (click)="getPage('profile')" > 
+        <i matTooltipPosition='above' matTooltip="My Profile" class="bi bi-person-circle"></i>
+    </div>
+    <div class="customCol text-center">
+        <i matTooltipPosition='above' matTooltip="Message" class="bi bi-envelope-exclamation"></i>
+    </div>
+    <div class="customCol text-center" (click)="getPage('events')">
+        <i matTooltipPosition='above' matTooltip="Calendar" class="bi bi-calendar-event"></i>
+    </div>
+    <div class="customCol text-center">
+        <i matTooltipPosition='above' matTooltip="Qustions" class="bi bi-question-circle"></i>
+    </div>
+</div>
+
+<div class="row justify-content-center text-white mt-3 w-100 m-0 p-0">
+    <mat-list role="list" class="text-white">
+        <mat-list-item (click)="getPage('main')" role="listitem"><i class="bi bi-house-door"></i>Home</mat-list-item>
+        <mat-list-item (click)="getPage('statistics')" role="listitem"><i class="bi bi-graph-up-arrow"></i>Statistics</mat-list-item>
+        <mat-list-item (click)="getPage('notification')" role="listitem"><i class="bi bi-bell"></i>Notification</mat-list-item>
+        <mat-list-item (click)="getPage('events')"role="listitem"><i class="bi bi-calendar4-event"></i>Events</mat-list-item>
+        <mat-accordion>
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title >
+                    <i class="bi bi-people"></i>
+                      Employees
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <mat-list role="list" class="text-white">
+                  <mat-list-item role="listitem" (click)="getPage('employees')">Employees</mat-list-item>                 
+                  <mat-list-item role="listitem" (click)="getPage('shifts')">Shifts</mat-list-item>
+                  <mat-list-item role="listitem">New Task</mat-list-item>
+                  <mat-list-item role="listitem">Task History</mat-list-item>
+                </mat-list>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <mat-icon> restaurant_menu</mat-icon>
+                    Menus
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <mat-list role="list" class="text-white">
+                <mat-list-item role="listitem" (click)="getPage('normatives')">Normatives</mat-list-item>
+                <mat-list-item role="listitem" (click)="getPage('menulist')" >Menu List</mat-list-item>
+                <mat-list-item role="listitem" (click)="getPage('addmenu')">Add Menu</mat-list-item>
+                <mat-list-item role="listitem" (click)="getPage('menudetail')">Menu Detail</mat-list-item>
+              </mat-list>
+          </mat-expansion-panel>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                      <mat-icon> fastfood</mat-icon>
+                     Stocks
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <mat-list role="list" class="text-white">
+                  <mat-list-item role="listitem" (click)="getPage('productstocks')">Product Stocks</mat-list-item>
+                  <mat-list-item role="listitem">Other Stocks</mat-list-item>
+                </mat-list>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <i class="bi bi-receipt-cutoff"></i>
+                    Invoices
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <mat-list role="list" class="text-white">
+              </mat-list>
+              <mat-list-item role="listitem" (click)="getPage('invoicelist')">Invoice List</mat-list-item>
+                <mat-list-item role="listitem" (click)="getPage('newinvoice')">Add New Invoice</mat-list-item>
+           </mat-expansion-panel>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    <i class="bi bi-cash-coin"></i>
+                      Finance
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <mat-list role="list" class="text-white">
+                </mat-list>
+                  <mat-list-item role="listitem">Profit</mat-list-item>
+                  <mat-list-item role="listitem">Expenditure</mat-list-item>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                    <mat-icon> money</mat-icon>
+                    Debt settlement
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <mat-list role="list" class="text-white">
+                <mat-list-item role="listitem">Reports</mat-list-item>
+                <mat-list-item role="listitem">Bills</mat-list-item>
+                <mat-list-item role="listitem">Workers</mat-list-item>
+              </mat-list>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                   <mat-panel-title>
+                       <i class="bi bi-kanban-fill"></i>
+                       Management Settigns
+                   </mat-panel-title>
+                 </mat-expansion-panel-header>
+                 <mat-list role="list" class="text-white">
+                  <mat-list-item role="listitem">Departments</mat-list-item>
+                   <mat-list-item role="listitem">Suppliers</mat-list-item>
+                 </mat-list>
+            </mat-expansion-panel>
+        </mat-accordion>
+        <mat-list-item (click)="getPage('settings')" role="listitem"><i class="bi bi-gear"></i> Settings</mat-list-item>
+        <mat-list-item (click)="getLogin()" role="listitem"><i class="bi bi-box-arrow-left"></i>Logout</mat-list-item> 
+    </mat-list>
+</div>

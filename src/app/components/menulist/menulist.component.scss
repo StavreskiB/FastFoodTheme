@@ -1,0 +1,147 @@
+.containter{
+    padding: 1% !important;
+    margin: 1% !important;
+}
+
+* {
+    color:#96A2B4;
+}
+
+table{
+    width: 100% !important;
+}
+
+table{
+    color:#96A2B4 !important;
+}
+
+tr {
+    height: 50px !important;
+    vertical-align: middle;
+}
+
+thead{
+    color:#abaaaa;
+    font-weight: 500;
+    background-color: #15181D;
+}
+
+tbody tr:hover{
+    background-color: #252b38;
+    cursor: pointer;
+}
+
+mat-card {
+    border-radius: 5%;
+    color:#96A2B4 !important;
+    background: #1a202e;
+    border: none;
+    box-shadow: 0 0.46875rem 2.1875rem rgb(90 97 105 / 10%), 0 0.9375rem 1.40625rem rgb(90 97 105 / 10%), 0 0.25rem 0.53125rem rgb(90 97 105 / 12%), 0 0.125rem 0.1875rem rgb(90 97 105 / 10%);
+}
+
+::ng-deep .mat-paginator {
+    background-color: transparent;
+    color: white
+}
+
+.badge {
+    background-color: transparent;  
+}
+
+::ng-deep .mat-select-value{
+    color: white !important
+}
+
+::ng-deep .mat-paginator-icon{
+    color: white !important
+}
+
+.w-35{
+    width: 35% !important;
+}
+
+::ng-deep .mat-step-header .mat-step-icon-selected, .mat-step-header .mat-step-icon-state-done, .mat-step-header .mat-step-icon-state-edit {
+    background-color: lightgrey!important;
+}
+
+//mat-input focused color
+::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+    color: #96A2B4 !important;
+}
+
+// mat-input error outline color
+::ng-deep .mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid .mat-form-field-outline-thick{
+    color: #96A2B4 !important;
+    opacity: 0.8!important;
+}
+
+// mat-input carent color
+::ng-deep .mat-input-element {
+    caret-color: #96A2B4 !important;
+}
+
+// mat-input error carent color
+::ng-deep .mat-form-field-invalid .mat-input-element, .mat-warn .mat-input-element {
+    caret-color: #96A2B4 !important;
+}
+
+// mat-label normal state style
+::ng-deep .mat-form-field-label {
+    color: #96A2B4 !important;
+    // color: $mainColor!important;
+}
+
+// mat-label focused style
+::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+    color: #96A2B4 !important;
+}
+
+// mat-label error style
+::ng-deep .mat-form-field.mat-form-field-invalid .mat-form-field-label {
+    color: #96A2B4 !important;
+}
+mat-label{
+    color: #96A2B4 !important;
+}
+
+mat-hint{
+    color: #96A2B4 !important
+}
+
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {
+    background-color: #131822 !important;
+}
+
+mat-icon{
+    font-size: 19px !important;
+    color: white !important;
+}
+
+::ng-deep .mat-button-wrapper {
+    line-height: 28px !important;
+}
+
+::ng-deep .mat-form-field-wrapper{
+    margin-bottom: -1.25em;
+}
+
+
+.search-icon {
+    position: absolute;
+    top: 44px;
+    padding-left: 10px;
+    color: #96a2b4;
+}
+
+.search-field {
+    font-weight: 500;
+    color: #96a2b4;
+    border-radius: 25px;
+    border: 0;
+    height: 45px;
+    padding: 8px 8px 8px 50px;
+    width: 250px;
+    transition: 0.2s, width 0.2s;
+    background: #12161f;
+}
+  

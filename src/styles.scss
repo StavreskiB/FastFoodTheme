@@ -1,0 +1,154 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~material-icons/iconfont/material-icons.css';
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$FastFoodFrontEnd-primary: mat.define-palette(mat.$indigo-palette);
+$FastFoodFrontEnd-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$FastFoodFrontEnd-warn: mat.define-palette(mat.$red-palette);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$FastFoodFrontEnd-theme: mat.define-light-theme((
+  color: (
+    primary: $FastFoodFrontEnd-primary,
+    accent: $FastFoodFrontEnd-accent,
+    warn: $FastFoodFrontEnd-warn,
+  )
+));
+
+html, body { height: 100%; width: 100%; max-width: 100%; max-height: 100%;} 
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($FastFoodFrontEnd-theme);
+
+
+.containter{
+  padding: 1% !important;
+  margin: 1% !important;
+}
+
+div {
+  color:#96A2B4;
+}
+
+
+.w-97{
+  width: 97% !important;
+}
+
+.w-93{
+  width: 93% !important;
+}
+
+mat-card {
+  border-radius: 5%;
+  color:#96A2B4 !important;
+  background: #1a202e;
+  border: none;
+  box-shadow: 0 0.46875rem 2.1875rem rgb(90 97 105 / 10%), 0 0.9375rem 1.40625rem rgb(90 97 105 / 10%), 0 0.25rem 0.53125rem rgb(90 97 105 / 12%), 0 0.125rem 0.1875rem rgb(90 97 105 / 10%);
+}
+
+.save{
+  background-color: #3F51B5 !important;
+  color: white;
+}
+
+::ng-deep .mat-step-header .mat-step-icon-selected, .mat-step-header .mat-step-icon-state-done, .mat-step-header .mat-step-icon-state-edit {
+  background-color: lightgrey!important;
+}
+
+//input outline color
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+  color: red !important;
+  // opacity: 1!important;
+}
+
+//mat-input focused color
+::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+  color: #96A2B4 !important;
+}
+
+// mat-input error outline color
+::ng-deep .mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid .mat-form-field-outline-thick{
+  color: #96A2B4 !important;
+  opacity: 0.8!important;
+}
+
+// mat-input carent color
+::ng-deep .mat-input-element {
+  caret-color: #96A2B4 !important;
+}
+
+// mat-input error carent color
+::ng-deep .mat-form-field-invalid .mat-input-element, .mat-warn .mat-input-element {
+  caret-color: #96A2B4 !important;
+}
+
+// mat-label normal state style
+::ng-deep .mat-form-field-label {
+  color: #96A2B4 !important;
+  // color: $mainColor!important;
+}
+
+// mat-label focused style
+::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+  color: #96A2B4 !important;
+}
+
+// mat-label error style
+::ng-deep .mat-form-field.mat-form-field-invalid .mat-form-field-label {
+  color: #96A2B4 !important;
+}
+mat-label{
+  color: #96A2B4 !important;
+}
+
+mat-hint{
+  color: #96A2B4 !important
+}
+
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {
+  background-color: #131822 !important;
+}
+
+table{
+  color:#96A2B4 !important;
+  padding: 4% !important;
+}
+
+tr {
+  height: 50px !important;
+  vertical-align: middle;
+}
+
+thead{
+  color:#abaaaa;
+  font-weight: 500;
+  background-color: #15181D;
+}
+
+tbody tr:hover{
+  background-color: #252b38;
+  cursor: pointer;
+}
+
+
+

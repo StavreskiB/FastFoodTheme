@@ -1,0 +1,68 @@
+
+
+.thumbnail{
+    width: 33% !important;
+    border:3px solid white;
+    border-radius: 18%;
+}
+
+.name{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.position{
+    font-size: 10px ;
+}
+.customCol {
+    width: 22% !important;
+}
+.customCol i{
+    color: white;
+    font-size: 19px;
+}
+
+mat-icon {
+    font-size: 19px;
+    margin-right: 4% !important;
+}
+i:hover {
+    cursor:pointer
+}
+
+mat-expansion-panel {
+    border: 0px !important;
+    color:white !important;
+    background-color: #1A202E !important;
+}
+mat-expansion-panel-header{
+    padding-left: 7% !important;
+
+}
+.mat-expansion-panel{
+    box-shadow: none;
+}
+
+
+::ng-deep .mat-expansion-indicator::after {
+   color:white !important
+  }
+
+mat-list-item {
+    border-radius: 10px !important;
+    color: white !important;
+}
+
+mat-list-item:hover{
+    cursor: pointer;
+    background: #151A25;
+}
+
+i {
+    font-size: 19px;
+    margin-right: 6.5% !important;
+}
+
+mat-panel-title{
+    color:white
+}
