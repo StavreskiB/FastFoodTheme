@@ -1,7 +1,144 @@
-<div class="containter">
-    <div class="row justify-content-center mt-5">
-        <div class="col-12">
-           asdadasds
+<div class="containter justify-content-center" style="text-align: -webkit-center;">
+    <mat-card class="h-100 w-75" style="border-radius: 0% !important;"> 
+        <div class="row">
+            <div class="col-3" style="align-self: center">
+                <img class="w-50 mt-5" src="https://cdn5.vectorstock.com/i/1000x1000/76/79/your-logo-here-placeholder-symbol-vector-26077679.jpg">
+            </div>
+            <div class="col-5 offset-md-4">
+                <div class="row">
+                    <div class="col-12" style="text-align: left;">
+                        <h1>Invoice</h1>
+                    </div>
+                    <div class="col-12">
+                        <mat-form-field appearance="fill" class="w-100">
+                            <mat-label>Invoice Number</mat-label>
+                            <input matInput placeholder="Placeholder">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-12">
+                        <mat-form-field appearance="fill" class="w-100">
+                            <mat-label>Due date</mat-label>
+                            <input matInput [matDatepicker]="picker">
+                            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                            <mat-datepicker #picker></mat-datepicker>
+                        </mat-form-field>              
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+        <div class="row">
+            <div class="col-4" style="align-self: center">
+                <div class="row mt-3">
+                    <div class="col-12" style="text-align: left;">
+                        <h1>From</h1>
+                    </div>
+                    <div class="col-12">
+                        <mat-form-field appearance="fill" class="w-100">
+                            <mat-label>Bussines Name</mat-label>
+                            <input matInput placeholder="Placeholder">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-12">
+                        <mat-form-field appearance="fill" class="w-100">
+                            <mat-label>Email Address</mat-label>
+                            <input matInput placeholder="Placeholder">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-12">
+                        <mat-form-field appearance="fill" class="w-100">
+                            <mat-label>Phone Number</mat-label>
+                            <input matInput placeholder="Placeholder">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-12">
+                        <mat-form-field appearance="fill" class="w-100">
+                            <mat-label>Address</mat-label>
+                            <input matInput placeholder="Placeholder">
+                        </mat-form-field>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5 offset-md-3 mt-3">
+                <div class="row">
+                    <div class="col-12" style="text-align: left;">
+                        <h1>Bill To</h1>
+                    </div>
+                    <div class="col-12">
+                        <mat-form-field appearance="fill" class="w-100">
+                            <mat-label>Client Name</mat-label>
+                            <input matInput placeholder="Placeholder">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-12">
+                        <mat-form-field appearance="fill" class="w-100">
+                            <mat-label>Email Address</mat-label>
+                            <input matInput placeholder="Placeholder">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-12">
+                        <mat-form-field appearance="fill" class="w-100">
+                            <mat-label>Phone Number</mat-label>
+                            <input matInput placeholder="Placeholder">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-12">
+                        <mat-form-field appearance="fill" class="w-100">
+                            <mat-label>Address</mat-label>
+                            <input matInput placeholder="Placeholder">
+                        </mat-form-field>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row p-5">
+            <table class="table mt-1" style="text-align-last: center;">
+                    <thead>
+                        <tr>
+                            <th scope="col">Action</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Rate</th>
+                            <th scope="col">QTY</th>
+                            <th scope="col">Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td><button style="border:1px solid #dc3545; color: #dc3545 !important" class="badge" mat-raised-button>Pending</button></td>
+                            <td class="text-center">
+                                <button style="margin-right: 3% !important; background-color:#FD7E14 !important; color:white !important" mat-mini-fab aria-label="Example icon button with a menu icon">
+                                    <mat-icon>remove_red_eye</mat-icon>
+                                </button>
+                                <button style="background-color:grey !important; color:white !important" mat-mini-fab aria-label="Example icon button with a menu icon">
+                                    <mat-icon>edit</mat-icon>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="border-0">
+                            <td class="border-0"colspan="3"></td>
+                            <td class="border-0" style="text-align-last: left;">SubTotal</td>
+                            <td class="border-0" style="text-align-last: right;">$456,231.00</td>
+                        </tr>
+                        <tr class="border-0">
+                            <td class="border-0" colspan="3"></td>
+                            <td class="border-0" style="text-align-last: left;">Tax:</td>
+                            <td class="border-0" style="text-align-last: right;">10%</td>
+                        </tr>
+                        <tr class="border-0">
+                            <td class="border-0" colspan="3"></td>
+                            <td class="border-0" style="text-align-last: left;">Paid Amount</td>
+                            <td class="border-0" style="text-align-last: right;">$234.23</td>
+                        </tr>
+                        <tr class="border-0">
+                            <td colspan="3" class="border-0"></td>
+                            <td class="border-0" style="text-align-last: left; border-radius: 25px 0px 0px 10px; background-color: #15181D; font-weight: bold;">Due Balance</td>
+                            <td class="border-0" style="text-align-last: right; border-radius: 0px 10px 25px 0px; background-color: #15181D; font-weight: bold;">$234.23</td>
+                        </tr>
+                    </tbody>
+            </table>
+        </div>
+    </mat-card>
 </div>

@@ -1,8 +1,11 @@
-// .containter{
-//     padding: 1% !important;
-//     margin: 1% !important;
-// }
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {
+    background-color: #131822 !important;
+}
 
-// * {
-//     color:#96A2B4;
-// } 
+::ng-deep .mat-button-wrapper {
+    line-height: 28px !important;
+}
+
+::ng-deep .mat-form-field-wrapper{
+    margin-bottom: -1.25em;
+}

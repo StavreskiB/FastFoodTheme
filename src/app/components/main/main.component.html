@@ -108,79 +108,177 @@
     </div>
     <div class="row justify-content-center mt-5">
         <div class="col-12">
-           <mat-card class="h-100" style="text-align: -webkit-center; border-radius: 0% !important;"> 
-                <div style="text-align: left;"><h2>Currently Employee</h2></div>
-                <table class="table mt-4">
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                    </tbody>
-                </table>
-           </mat-card> 
-        </div>
+            <mat-card class="h-100" style="text-align: -webkit-center; border-radius: 0% !important;"> 
+                 <table class="table mt-2" mdbTable>
+                     <thead>
+                         <tr class="w-100" style="background-color: #020910; vertical-align: -webkit-baseline-middle;">
+                             <th class="pb-0"><h2>Currently in work</h2></th>
+                             <th colspan="5" class="pb-0"> 
+                                 <!-- <mat-form-field class="example-full-width w-50 p-0 m-0" appearance="fill">
+                                     <mat-label>Number</mat-label>
+                                     <input type="text"
+                                         placeholder="Pick one" 
+                                         aria-label="Number"
+                                         matInput
+                                         [formControl]="myControl"
+                                         [matAutocomplete]="auto">
+                                     <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+                                     <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                                         {{option}}
+                                     </mat-option>
+                                     </mat-autocomplete>
+                                </mat-form-field> -->
+                                <!-- <mat-form-field>
+                                 <mat-icon>refresh</mat-icon>
+                                 <input type="text"
+                                         placeholder="Pick one" 
+                                         aria-label="Number"
+                                         matInput
+                                         [formControl]="myControl">
+                                </mat-form-field> -->
+                                <label ><i class="material-icons search-icon">search</i></label>
+                                <input placeholder="Search" type="text" class="browser-default search-field">
+                             </th>
+                             <th class="pb-0" style="text-align: center;">
+                                 <button style="margin-right: 3% !important; background-color:#3F51B5 !important; color:white !important" mat-mini-fab aria-label="Example icon button with a menu icon">
+                                     <mat-icon>library_add</mat-icon>
+                                 </button>
+                                 <button style="margin-right: 3% !important; background-color:#3F51B5 !important; color:white !important" mat-mini-fab aria-label="Example icon button with a menu icon">
+                                     <mat-icon>refresh</mat-icon>
+                                 </button>
+                             </th>
+                         </tr>
+                         <tr>
+                             <th scope="col" mat-sort-header>#</th>
+                             <th scope="col" mat-sort-header>Name</th>
+                             <th scope="col">Surname</th>
+                             <th scope="col">Email</th>
+                             <th scope="col">Mobile Phone</th>
+                             <th scope="col">Department</th>
+                             <th scope="col" class="text-center">Action</th>
+                         </tr>
+                     </thead>
+                     <tbody>
+                         <tr>
+                             <th scope="row">1</th>
+                             <td>Mark</td>
+                             <td>Otto</td>
+                             <td>Otto</td>
+                             <td>Otto</td>
+                             <td>Otto</td>
+                             <td class="text-center">
+                                 <button style="margin-right: 3% !important; background-color:#FD7E14 !important; color:white !important" mat-mini-fab aria-label="Example icon button with a menu icon">
+                                     <mat-icon>remove_red_eye</mat-icon>
+                                 </button>
+                                 <button style="background-color:grey !important; color:white !important" mat-mini-fab aria-label="Example icon button with a menu icon">
+                                     <mat-icon>edit</mat-icon>
+                                 </button>
+                             </td>
+                         </tr>
+                         
+                         <tr>
+                             <th scope="row">1</th>
+                             <td>Mark</td>
+                             <td>Otto</td>
+                             <td>Otto</td>
+                             <td>Otto</td>
+                             <td>Otto</td>
+                             <td class="text-center">
+                                 <button style="margin-right: 3% !important; background-color:#FD7E14 !important; color:white !important" mat-mini-fab aria-label="Example icon button with a menu icon">
+                                     <mat-icon>remove_red_eye</mat-icon>
+                                 </button>
+                                 <button style="background-color:grey !important; color:white !important" mat-mini-fab aria-label="Example icon button with a menu icon">
+                                     <mat-icon>edit</mat-icon>
+                                 </button>
+                             </td>
+                         </tr>
+                         <tr>
+                             <th scope="row">1</th>
+                             <td>Mark</td>
+                             <td>Otto</td>
+                             <td>Otto</td>
+                             <td>Otto</td>
+                             <td>Otto</td>
+                             <td class="text-center">
+                                 <button style="margin-right: 3% !important; background-color:#FD7E14 !important; color:white !important" mat-mini-fab aria-label="Example icon button with a menu icon">
+                                     <mat-icon>remove_red_eye</mat-icon>
+                                 </button>
+                                 <button style="background-color:grey !important; color:white !important" mat-mini-fab aria-label="Example icon button with a menu icon">
+                                     <mat-icon>edit</mat-icon>
+                                 </button>
+                             </td>
+                         </tr>
+                         <tr>
+                             <th scope="row">1</th>
+                             <td>Mark</td>
+                             <td>Otto</td>
+                             <td>Otto</td>
+                             <td>Otto</td>
+                             <td>Otto</td>
+                             <td class="text-center">
+                                 <button style="margin-right: 3% !important; background-color:#FD7E14 !important; color:white !important" mat-mini-fab aria-label="Example icon button with a menu icon">
+                                     <mat-icon>remove_red_eye</mat-icon>
+                                 </button>
+                                 <button style="background-color:grey !important; color:white !important" mat-mini-fab aria-label="Example icon button with a menu icon">
+                                     <mat-icon>edit</mat-icon>
+                                 </button>
+                             </td>
+                         </tr>
+                         <tr>
+                             <th scope="row">1</th>
+                             <td>Mark</td>
+                             <td>Otto</td>
+                             <td>Otto</td>
+                             <td>Otto</td>
+                             <td>Otto</td>
+                             <td class="text-center">
+                                 <button style="margin-right: 3% !important; background-color:#FD7E14 !important; color:white !important" mat-mini-fab aria-label="Example icon button with a menu icon">
+                                     <mat-icon>remove_red_eye</mat-icon>
+                                 </button>
+                                 <button style="background-color:grey !important; color:white !important" mat-mini-fab aria-label="Example icon button with a menu icon">
+                                     <mat-icon>edit</mat-icon>
+                                 </button>
+                             </td>
+                         </tr>
+                         <tr>
+                             <th scope="row">2</th>
+                             <td>Mark</td>
+                             <td>Otto</td>
+                             <td>Otto</td>
+                             <td>Otto</td>
+                             <td>Otto</td>
+                             <td class="text-center">
+                                 <button style="margin-right: 3% !important; background-color:#FD7E14 !important; color:white !important" mat-mini-fab aria-label="Example icon button with a menu icon">
+                                     <mat-icon>remove_red_eye</mat-icon>
+                                 </button>
+                                 <button style="background-color:grey !important; color:white !important" mat-mini-fab aria-label="Example icon button with a menu icon">
+                                     <mat-icon>edit</mat-icon>
+                                 </button>
+                             </td>
+                         </tr>
+                         <tr>
+                             <th scope="row">3</th>
+                             <td>Mark</td>
+                             <td>Otto</td>
+                             <td>Otto</td>
+                             <td>Otto</td>
+                             <td>Otto</td>
+                             <td class="text-center">
+                                 <button style="margin-right: 3% !important; background-color:#FD7E14 !important; color:white !important" mat-mini-fab aria-label="Example icon button with a menu icon">
+                                     <mat-icon>remove_red_eye</mat-icon>
+                                 </button>
+                                 <button style="background-color:grey !important; color:white !important" mat-mini-fab aria-label="Example icon button with a menu icon">
+                                     <mat-icon>edit</mat-icon>
+                                 </button>
+                             </td>
+                         </tr>
+                     </tbody>
+                 </table>
+                 <div class="row">
+                     <mat-paginator [length]="200" [pageSizeOptions]="[10, 50, 100]" aria-label="Select page">
+                     </mat-paginator>
+                 </div>
+            </mat-card> 
+         </div>
     </div>
 </div>

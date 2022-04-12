@@ -42,6 +42,8 @@ import { ShiftsComponent } from './components/shifts/shifts.component';
 import { ProductstocksComponent } from './components/productstocks/productstocks.component';
 import { NewinvoiceComponent } from './components/newinvoice/newinvoice.component';
 import { SettingsComponent } from './components/settings/settings.component';
+import { MatDatepickerModule } from "@angular/material/datepicker";
+import { MatNativeDateModule } from '@angular/material/core';
 
 @NgModule({
   declarations: [ 
@@ -90,7 +92,10 @@ import { SettingsComponent } from './components/settings/settings.component';
     MatPaginatorModule,
     MatAutocompleteModule,
     MatDividerModule,
-    MatSelectModule
+    MatSelectModule,
+    NgApexchartsModule,
+    MatDatepickerModule,
+    MatNativeDateModule 
   ],
   exports: [
     MatFormFieldModule,
