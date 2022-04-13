@@ -1,9 +1,3 @@
-<!-- <div class="row justify-content-center text-white m-0 p-0" style="height: 9%;">
-    <div class="col-12 text-center" class="softwareLogo">
-        <img src="../../../assets/img/logo.png" style="margin-right:3%">
-        <h2>Name</h2>
-    </div>
-</div>  -->
 <div class="row justify-content-center text-white m-0 p-0">
      <div class="col-12 text-center mt-4">
         <img src="../../../assets/img/img.jpg" alt="thumbnail" class="thumbnail">
@@ -21,7 +15,7 @@
     <div class="customCol text-center" (click)="getPage('events')">
         <i matTooltipPosition='above' matTooltip="Calendar" class="bi bi-calendar-event"></i>
     </div>
-    <div class="customCol text-center">
+    <div class="customCol text-center" (click)="getPage('questions')">
         <i matTooltipPosition='above' matTooltip="Qustions" class="bi bi-question-circle"></i>
     </div>
 </div>
@@ -105,9 +99,9 @@
                 </mat-panel-title>
               </mat-expansion-panel-header>
               <mat-list role="list" class="text-white">
-                <mat-list-item role="listitem">Reports</mat-list-item>
-                <mat-list-item role="listitem">Bills</mat-list-item>
-                <mat-list-item role="listitem">Workers</mat-list-item>
+                <mat-list-item role="listitem" (click)="getPage('reports')">Reports</mat-list-item>
+                <mat-list-item role="listitem" (click)="getPage('bills')">Bills</mat-list-item>
+                <mat-list-item role="listitem" (click)="getPage('workers')">Workers</mat-list-item>
               </mat-list>
             </mat-expansion-panel>
             <mat-expansion-panel>
@@ -118,8 +112,8 @@
                    </mat-panel-title>
                  </mat-expansion-panel-header>
                  <mat-list role="list" class="text-white">
-                  <mat-list-item role="listitem">Departments</mat-list-item>
-                   <mat-list-item role="listitem">Suppliers</mat-list-item>
+                  <mat-list-item role="listitem" (click)="getPage('departments')">Departments</mat-list-item>
+                   <mat-list-item role="listitem" (click)="getPage('suppliers')">Suppliers</mat-list-item>
                  </mat-list>
             </mat-expansion-panel>
         </mat-accordion>

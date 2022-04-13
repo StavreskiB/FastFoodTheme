@@ -1,0 +1,16 @@
+::ng-deep .mat-paginator {
+    background-color: transparent;
+    color: white
+}
+
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {
+    background-color: #131822 !important;
+}
+
+::ng-deep .mat-button-wrapper {
+    line-height: 28px !important;
+}
+
+::ng-deep .mat-form-field-wrapper{
+    margin-bottom: -1.25em;
+} 

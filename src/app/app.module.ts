@@ -44,8 +44,14 @@ import { NewinvoiceComponent } from './components/newinvoice/newinvoice.componen
 import { SettingsComponent } from './components/settings/settings.component';
 import { MatDatepickerModule } from "@angular/material/datepicker";
 import { MatNativeDateModule } from '@angular/material/core';
-
-@NgModule({
+import { DepartmentsComponent } from './components/departments/departments.component';
+import { SuppliersComponent } from './components/suppliers/suppliers.component';
+import { ReportsComponent } from './components/reports/reports.component';
+import { BillsComponent } from './components/bills/bills.component';
+import { WorkersComponent } from './components/workers/workers.component';
+import { QuestionsComponent } from './components/questions/questions.component';
+  
+@NgModule({ 
   declarations: [ 
     AppComponent,
     LoginComponent,
@@ -54,19 +60,25 @@ import { MatNativeDateModule } from '@angular/material/core';
     ManagementhomeComponent,
     MainComponent,
     ProfileComponent,
-    MenulistComponent,
+    MenulistComponent, 
     MenudetailComponent,
     EmployeeslistComponent,
     AddmenuComponent,
     NormativesComponent,
     InvoicelistComponent, 
     StatisticsComponent,
-    NotificationComponent,
+    NotificationComponent, 
     EventsComponent,
     ShiftsComponent,
     ProductstocksComponent,
     NewinvoiceComponent,
-    SettingsComponent
+    SettingsComponent,
+    DepartmentsComponent,
+    SuppliersComponent, 
+    ReportsComponent, 
+    BillsComponent,
+    WorkersComponent,
+    QuestionsComponent
   ],
   imports: [
     CommonModule,

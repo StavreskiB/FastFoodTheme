@@ -18,12 +18,18 @@ import { ShiftsComponent } from './components/shifts/shifts.component';
 import { ProductstocksComponent } from './components/productstocks/productstocks.component';
 import { NewinvoiceComponent } from './components/newinvoice/newinvoice.component';
 import { SettingsComponent } from './components/settings/settings.component';
+import { DepartmentsComponent } from './components/departments/departments.component';
+import { SuppliersComponent } from './components/suppliers/suppliers.component';
+import { ReportsComponent } from './components/reports/reports.component';
+import { BillsComponent } from './components/bills/bills.component';
+import { WorkersComponent } from './components/workers/workers.component';
+import { QuestionsComponent } from './components/questions/questions.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'login', component: LoginComponent },
   { path: 'home', component: ManagementhomeComponent, 
-    children: [
+    children: [ 
       {path : 'main', component : MainComponent},
       {path : 'profile', component : ProfileComponent},
       {path : 'menulist', component : MenulistComponent},
@@ -38,9 +44,13 @@ const routes: Routes = [
       {path : 'shifts', component : ShiftsComponent},
       {path : 'productstocks', component : ProductstocksComponent},
       {path : 'newinvoice', component : NewinvoiceComponent},
-      {path : 'settings', component : SettingsComponent}
-
-
+      {path : 'settings', component : SettingsComponent},
+      {path : 'departments', component : DepartmentsComponent},
+      {path : 'suppliers', component : SuppliersComponent},
+      {path : 'reports', component : ReportsComponent},
+      {path : 'bills', component : BillsComponent},
+      {path : 'workers', component : WorkersComponent},
+      {path : 'questions', component : QuestionsComponent}
 
   ] 
   }
