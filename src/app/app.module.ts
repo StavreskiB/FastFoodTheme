@@ -50,7 +50,9 @@ import { ReportsComponent } from './components/reports/reports.component';
 import { BillsComponent } from './components/bills/bills.component';
 import { WorkersComponent } from './components/workers/workers.component';
 import { QuestionsComponent } from './components/questions/questions.component';
-  
+import { TimetableComponent } from './components/timeTable/timetable/timetable.component';
+import { AngularDraggableModule } from 'angular2-draggable';
+
 @NgModule({ 
   declarations: [ 
     AppComponent,
@@ -78,7 +80,8 @@ import { QuestionsComponent } from './components/questions/questions.component';
     ReportsComponent, 
     BillsComponent,
     WorkersComponent,
-    QuestionsComponent
+    QuestionsComponent,
+    TimetableComponent
   ],
   imports: [
     CommonModule,
@@ -95,7 +98,7 @@ import { QuestionsComponent } from './components/questions/questions.component';
     MatTooltipModule,
     MatListModule,
     MatExpansionModule,
-    MatCardModule,
+    MatCardModule, 
     MatProgressBarModule,
     NgApexchartsModule,
     MatTableModule,
@@ -107,7 +110,8 @@ import { QuestionsComponent } from './components/questions/questions.component';
     MatSelectModule,
     NgApexchartsModule,
     MatDatepickerModule,
-    MatNativeDateModule 
+    MatNativeDateModule,
+    AngularDraggableModule
   ],
   exports: [
     MatFormFieldModule,

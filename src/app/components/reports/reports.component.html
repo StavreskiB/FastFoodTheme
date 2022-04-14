@@ -1,1 +1,141 @@
-<p>reports works!</p>
+<div class="containter">
+    <div class="row justify-content-center mt-3">
+        <mat-card class="h-100" style="text-align: -webkit-center; border-radius: 0% !important;"> 
+        <div class="col-12 mt-3">
+                <table class="table mt-2" mdbTable>
+                    <thead>
+                        <tr class="w-100" style="background-color: #020910; vertical-align: -webkit-baseline-middle;">
+                            <th class="pb-0"><h2>Reports</h2></th>
+                            <th class="pb-0" style="text-align: center;">
+                                <mat-form-field class="example-form-field" appearance="fill">
+                                <mat-label>Range</mat-label>
+                                <mat-date-range-input
+                                    [formGroup]="campaignOne"
+                                    [rangePicker]="campaignOnePicker">
+                                    <input matStartDate placeholder="Start date" readonly formControlName="start">
+                                    <input matEndDate placeholder="End date" readonly formControlName="end">
+                                </mat-date-range-input>
+                                <mat-datepicker-toggle matSuffix [for]="campaignOnePicker"></mat-datepicker-toggle>
+                                <mat-date-range-picker #campaignOnePicker></mat-date-range-picker>
+                                </mat-form-field>
+                            </th>
+                            <th class="pb-0" style="text-align: center;">
+                                <input placeholder="Employee" type="text" class="browser-default search-field">
+                            </th>
+                            <th class="pb-0"> 
+                                <!-- <mat-form-field class="example-full-width w-50 p-0 m-0" appearance="fill">
+                                    <mat-label>Number</mat-label>
+                                    <input type="text"
+                                        placeholder="Pick one" 
+                                        aria-label="Number"
+                                        matInput
+                                        [formControl]="myControl"
+                                        [matAutocomplete]="auto">
+                                    <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+                                    <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                                        {{option}}
+                                    </mat-option>
+                                    </mat-autocomplete>
+                               </mat-form-field> -->
+                               <!-- <mat-form-field>
+                                <mat-icon>refresh</mat-icon>
+                                <input type="text"
+                                        placeholder="Pick one" 
+                                        aria-label="Number"
+                                        matInput
+                                        [formControl]="myControl">
+                               </mat-form-field> -->
+                            </th>
+
+                            <th class="pb-0" style="text-align: center;">
+
+                            </th>
+                            
+                            <th class="pb-0" style="text-align: center;">
+                                
+                            </th>
+                        </tr>
+                        <tr>
+                            <th scope="col" mat-sort-header>#</th>
+                            <th scope="col">Employee</th>
+                            <th scope="col" mat-sort-header>Date</th>
+                            <th scope="col">Shift</th>
+                            <th scope="col">Earnings</th>
+                            <th scope="col" class="text-center">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>Otto</td>
+                            <td>Otto</td>
+                            <td class="text-center">
+                                <button style="margin-right: 3% !important; background-color:#FD7E14 !important; color:white !important" mat-mini-fab aria-label="Example icon button with a menu icon">
+                                    <mat-icon> list_alt</mat-icon>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>Otto</td>
+                            <td>Otto</td>
+                            <td class="text-center">
+                                <button style="margin-right: 3% !important; background-color:#FD7E14 !important; color:white !important" mat-mini-fab aria-label="Example icon button with a menu icon">
+                                    <mat-icon> list_alt</mat-icon>
+                                </button>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>Otto</td>
+                            <td>Otto</td>
+                            <td class="text-center">
+                                <button style="margin-right: 3% !important; background-color:#FD7E14 !important; color:white !important" mat-mini-fab aria-label="Example icon button with a menu icon">
+                                    <mat-icon> list_alt</mat-icon>
+                                </button>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>Otto</td>
+                            <td>Otto</td>
+                            <td class="text-center">
+                                <button style="margin-right: 3% !important; background-color:#FD7E14 !important; color:white !important" mat-mini-fab aria-label="Example icon button with a menu icon">
+                                    <mat-icon> list_alt</mat-icon>
+                                </button>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>Otto</td>
+                            <td>Otto</td>
+                            <td class="text-center">
+                                <button style="margin-right: 3% !important; background-color:#FD7E14 !important; color:white !important" mat-mini-fab aria-label="Example icon button with a menu icon">
+                                    <mat-icon> list_alt</mat-icon>
+                                </button>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+                <div class="row">
+                    <mat-paginator [length]="200" [pageSizeOptions]="[10, 50, 100]" aria-label="Select page">
+                    </mat-paginator>
+                </div>
+            </div>
+        </mat-card> 
+    </div>
+</div>

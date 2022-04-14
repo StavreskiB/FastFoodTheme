@@ -26,3 +26,24 @@
     background: #12161f;
 }
   
+
+.thumbnail{
+    width: 28% !important;
+    border:3px solid white;
+    border-radius: 18%;
+}
+
+.name{
+    font-size: 22px;
+    font-weight: 500;
+    color: white !important
+}
+
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {
+    background-color: #131822 !important;
+}
+
+button {
+    background-color: #3f51b5 !important;
+    color: #EEF0F9 !important;
+}

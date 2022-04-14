@@ -1,1 +1,239 @@
-<p>workers works!</p>
+<div class="containter">
+    <div class="row justify-content-center mt-3">
+        <mat-card class="h-100" style="text-align: -webkit-center; border-radius: 0% !important;"> 
+        <div class="col-12 mt-3">
+                <table class="table mt-2" mdbTable>
+                    <thead>
+                        <tr class="w-100" style="background-color: #020910; vertical-align: -webkit-baseline-middle;">
+                            <th class="pb-0"><h2>Current Employee</h2></th>
+                            <th colspan="5" class="pb-0"> 
+                                <!-- <mat-form-field class="example-full-width w-50 p-0 m-0" appearance="fill">
+                                    <mat-label>Number</mat-label>
+                                    <input type="text"
+                                        placeholder="Pick one" 
+                                        aria-label="Number"
+                                        matInput
+                                        [formControl]="myControl"
+                                        [matAutocomplete]="auto">
+                                    <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+                                    <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                                        {{option}}
+                                    </mat-option>
+                                    </mat-autocomplete>
+                               </mat-form-field> -->
+                               <!-- <mat-form-field>
+                                <mat-icon>refresh</mat-icon>
+                                <input type="text"
+                                        placeholder="Pick one" 
+                                        aria-label="Number"
+                                        matInput
+                                        [formControl]="myControl">
+                               </mat-form-field> -->
+                               <label ><i class="material-icons search-icon">search</i></label>
+                               <input placeholder="Search" type="text" class="browser-default search-field">
+                            </th>
+                            <th class="pb-0" style="text-align: center;">
+
+                            </th>
+                        </tr>
+                        <tr>
+                            <th scope="col" mat-sort-header>#</th>
+                            <th scope="col" mat-sort-header>Name</th>
+                            <th scope="col">Surname</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Start Time</th>
+                            <th scope="col">End Time</th>
+                            <th scope="col" class="text-center">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>Otto</td>
+                            <td>Otto</td>
+                            <td>Otto</td>
+                            <td class="text-center">
+                                <button style="margin-right: 3% !important; background-color:#FD7E14 !important; color:white !important" mat-mini-fab aria-label="Example icon button with a menu icon">
+                                    <mat-icon> list_alt</mat-icon>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>Otto</td>
+                            <td>Otto</td>
+                            <td>Otto</td>
+                            <td class="text-center">
+                                <button style="margin-right: 3% !important; background-color:#FD7E14 !important; color:white !important" mat-mini-fab aria-label="Example icon button with a menu icon">
+                                    <mat-icon> list_alt</mat-icon>
+                                </button>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>Otto</td>
+                            <td>Otto</td>
+                            <td>Otto</td>
+                            <td class="text-center">
+                                <button style="margin-right: 3% !important; background-color:#FD7E14 !important; color:white !important" mat-mini-fab aria-label="Example icon button with a menu icon">
+                                    <mat-icon> list_alt</mat-icon>
+                                </button>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>Otto</td>
+                            <td>Otto</td>
+                            <td>Otto</td>
+                            <td class="text-center">
+                                <button style="margin-right: 3% !important; background-color:#FD7E14 !important; color:white !important" mat-mini-fab aria-label="Example icon button with a menu icon">
+                                    <mat-icon> list_alt</mat-icon>
+                                </button>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>Otto</td>
+                            <td>Otto</td>
+                            <td>Otto</td>
+                            <td class="text-center">
+                                <button style="margin-right: 3% !important; background-color:#FD7E14 !important; color:white !important" mat-mini-fab aria-label="Example icon button with a menu icon">
+                                    <mat-icon> list_alt</mat-icon>
+                                </button>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+                <div class="row">
+                    <mat-paginator [length]="200" [pageSizeOptions]="[10, 50, 100]" aria-label="Select page">
+                    </mat-paginator>
+                </div>
+            </div>
+        </mat-card> 
+
+        
+    <div class="row mt-5 justify-content-center">
+        <div class="col-3">
+            <mat-card class="h-100">
+                <div class="box-img" style="background-color: #6F42C1 !important;">
+                    <mat-icon>fastfood</mat-icon>
+                </div>
+                <div class="box-statistics w-100">
+                    <h4 class="m-0">Kitchen orders</h4>
+                    <div>4,234</div>
+                </div>
+                <div class="box-indicators">
+                    <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+                </div>
+            </mat-card>
+        </div>
+        <div class="col-3">
+            <mat-card class="h-100">
+                <div class="box-img" style="background-color: #fd7e14 !important;">
+                    <mat-icon>local_bar</mat-icon>
+                </div>
+                <div class="box-statistics w-100">
+                    <h4 class="m-0">Bar orders</h4>
+                    <div>4,234</div>
+                </div>
+                <div class="box-indicators">
+                    <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+                </div>
+            </mat-card>
+        </div>
+        <div class="col-3">
+            <mat-card class="h-100">
+                <div class="box-img" style="background-color: #198754 !important;">
+                    <mat-icon>local_shipping</mat-icon>
+                </div>
+                <div class="box-statistics w-100">
+                    <h4 class="m-0">Shipping orders</h4>
+                    <div>4,234</div>
+                </div>
+                <div class="box-indicators">
+                    <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+                </div>
+            </mat-card>        
+        </div>
+        <div class="col-3">
+            <mat-card class="h-100">
+                <div class="box-img" style="background-color: #0DCAF0 !important;">
+                    <mat-icon>attach_money</mat-icon>
+                </div>
+                <div class="box-statistics w-100">
+                    <h4 class="m-0">Total</h4>
+                    <div>4,234</div>
+                </div>
+                <div class="box-indicators">
+                    <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+                </div>
+            </mat-card>        
+        </div>
+    </div>
+    <div class="row p-5">
+        <table class="table mt-1" style="text-align-last: center;">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Table</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td><button style="border:1px solid #dc3545; color: #dc3545 !important" class="badge" mat-raised-button>Pending</button></td>
+                        <td class="text-center">
+                            <button style="margin-right: 3% !important; background-color:#FD7E14 !important; color:white !important" mat-mini-fab aria-label="Example icon button with a menu icon">
+                                <mat-icon>remove_red_eye</mat-icon>
+                            </button>
+                            <button style="background-color:grey !important; color:white !important" mat-mini-fab aria-label="Example icon button with a menu icon">
+                                <mat-icon>playlist_add_check</mat-icon>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="border-0">
+                        <td class="border-0" colspan="3">
+                           
+                        </td>
+                        <td class="border-0" style="text-align-last: left;">SubTotal</td>
+                        <td class="border-0" style="text-align-last: right;">$456,231.00</td>
+                    </tr>
+                    <tr class="border-0">
+                        <td class="border-0" colspan="3"></td>
+                        <td class="border-0" style="text-align-last: left;">Tax:</td>
+                        <td class="border-0" style="text-align-last: right;">10%</td>
+                    </tr>
+                    <tr class="border-0">
+                        <td class="border-0" colspan="3"></td>
+                        <td class="border-0" style="text-align-last: left;">Paid Amount</td>
+                        <td class="border-0" style="text-align-last: right;">$234.23</td>
+                    </tr>
+                    <tr class="border-0">
+                        <td colspan="3" class="border-0"></td>
+                        <td class="border-0" style="text-align-last: left; background-color: #15181D; font-weight: bold;">Due Balance</td>
+                        <td class="border-0" style="text-align-last: right; background-color: #15181D; font-weight: bold;">$234.23</td>
+                    </tr>
+                </tbody>
+        </table>
+    </div>
+    </div>
+</div>

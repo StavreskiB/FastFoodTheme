@@ -23,6 +23,8 @@
     "@material-ui/icons": "^4.11.2",
     "@material/checkbox": "^13.0.0",
     "angular-mat-datepicker": "^0.0.2",
+    "angular-material-event-calendar": "^0.1.4",
+    "angular2-draggable": "^2.3.2",
     "apexcharts": "^3.35.0",
     "bootstrap": "^5.1.3",
     "bootstrap-icons": "^1.8.1",

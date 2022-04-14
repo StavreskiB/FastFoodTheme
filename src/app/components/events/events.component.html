@@ -1,3 +1,9 @@
 <div class="containter">
-    <h3>Events Component</h3>
+    <p>{{events | json}}</p>
+    <div #externals id="external-events">
+        <div class="fc-event" ngDraggable [zIndex]="99999" [zIndexMoving]="99999" [trackPosition]="false" style="display: inline-block; margin: 1em 0; padding: .5em; cursor: move;"
+        *ngFor="let event of externalEvents" [attr.data-event]="getEvent(event)">{{event.title}}</div>
+    </div>
+    <hr />
+    <app-timetable [(events)]="events" [externalsRef]="externals"></app-timetable>
  </div>
